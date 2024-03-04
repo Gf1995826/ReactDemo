@@ -1,0 +1,52 @@
+{
+  "name": "reactdemo",
+  "version": "1.0.0",
+  "description": "简单架构搭建",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server -c build/webpack.dev.js",
+    "build": "webpack -c build/webpack.prod.js",
+    "dev:dev": "cross-env NODE_ENV=development BASE_ENV=development npm start",
+    "build:analy": "cross-env NODE_ENV=production BASE_ENV=production webpack -c build/webpack.analy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "autoprefixer": "^10.4.18",
+    "babel-loader": "^9.1.3",
+    "compression-webpack-plugin": "^11.1.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "core-js": "^3.36.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "glob-all": "^3.3.1",
+    "html-webpack-plugin": "^5.6.0",
+    "less": "^4.2.0",
+    "less-loader": "^12.2.0",
+    "mini-css-extract-plugin": "^2.8.1",
+    "postcss-loader": "^8.1.1",
+    "purgecss-webpack-plugin": "^4.1.3",
+    "react-refresh": "^0.14.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "style-loader": "^3.3.4",
+    "terser-webpack-plugin": "^5.3.10",
+    "thread-loader": "^4.0.2",
+    "webpack": "^5.90.3",
+    "webpack-bundle-analyzer": "^4.10.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
